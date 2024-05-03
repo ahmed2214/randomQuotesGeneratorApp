@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-optical-sizing: auto;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin: 0 0 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+.quotes {
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    max-width: 600px;
+    padding: 20px;
+}
+.quote-id {
+  position: absolute;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(244, 139, 139);
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  left: 50%;
+}
+
+.quote-display {
+    line-height: 1.8;
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 20px;
+    min-height: 140px;
+}
+.quote-display::before,
+.quote-display::after{
+    position: absolute;
+    font-size: 50px;
+    color: #eee;
+}
+.quote-display::before {
+  content: "“";
+  top :0 ;
+  left: 0;
+}
+.quote-display::after {
+  content: "”";
+  bottom: 0;
+  right: 0;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+ 
+}
+.buttons button{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.generate {
+    background-color: rgb(81, 229, 81);
+}
+.auto {
+    background-color: rgb(78, 78, 225);
+}
+.stop {
+    background-color: rgb(243, 86, 86);
+}
+.auto-status{
+    margin: auto;
+    text-align: center;
+    color: #aaa6a6;
+}
